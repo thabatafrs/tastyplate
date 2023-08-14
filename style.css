@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins';
+}
+
+:root {
+    --primary: #ED4D18;
+    --secondary: #FF9A3C;
+    --black: #000;
+    --white: #fff;
+    --gray: #E0E0E0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.6rem;
+    line-height: 8px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 4rem;
+    background: var(--primary);
+    border: solid var(--black);
+    border-width: 0 0 3px 0;
+    padding: 2rem 10rem 2rem;
+}
+
+.buttons {
+    display: flex;
+    width: 55%;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px red solid;
+}
+
+ul {
+    display: flex;
+}
+
+a {
+    background: var(--white);
+    width: 8rem;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 1.3rem;
+    border: 1px solid var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.search-bar {
+    background: #fff;
+    width: 14rem;
+    height: 2.5rem;
+    display: flex;
+    border-radius: 1.3rem;
+    border: 1px solid var(--black);
+}
+
+input[type="search"] {
+    background: transparent;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.search-bar button {
+    outline: none;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.login {
+    width: 3rem;
+    height: 2.5rem;
+    background: var(--secondary);
+    border-radius: 1.3rem;
+    border: 1px solid var(--black);
+    cursor: pointer;
+}
+
+.login i {
+    font-size: 1rem;
+}
