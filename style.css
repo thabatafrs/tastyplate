@@ -7,6 +7,12 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins';
+    outline: 0;
+    border: none;
+}
+
+body {
+    background: var(--gray);
 }
 
 :root {
@@ -44,7 +50,6 @@ nav {
     width: 55%;
     align-items: center;
     justify-content: space-between;
-    border: 3px red solid;
 }
 
 ul {
@@ -66,29 +71,33 @@ a {
     font-weight: 500;
 }
 
-.search-bar {
-    background: #fff;
-    width: 14rem;
-    height: 2.5rem;
-    display: flex;
+
+nav .buttons .search-bar {
+    background: var(--white);
     border-radius: 1.3rem;
     border: 1px solid var(--black);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-input[type="search"] {
+nav .buttons .search-bar input[type="search"] {
     background: transparent;
-    outline: none;
-    border: none;
-    text-align: center;
+    width: 9rem;
+    height: 2.5rem;
     font-size: 0.9rem;
+    color: var(--black);
+    margin-left: 0.7rem;
 }
 
-.search-bar button {
-    outline: none;
-    border: none;
-    background: #fff;
+.search-bar i {
     cursor: pointer;
     font-size: 0.9rem;
+    margin: 0 0.7rem;
+}
+
+nav .buttons .search-bar input[type="search"]::placeholder {
+    color: var(--black)
 }
 
 .login {
